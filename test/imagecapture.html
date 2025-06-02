@@ -5,6 +5,14 @@
   <body>
     <p>Test für die Direktaufnahme von Bildern auf mobilen Endgeräten</p>
     <p>Bild wird <b>nicht</b> gespeichert.</p>
+
+    <h2>Must be selected from album</h2>
+    <input type="file" accept="image/*">
+ 
+    <h2>Must be captured from camera</h2>
     <input type="file" accept="image/*" capture="environment">
+ 
+    <h2>Allowed user to choose either from album or camera</h2>
+    <input type="file" accept="image/*;capture=camera">
   </body>
 </html>
