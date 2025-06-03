@@ -17,5 +17,13 @@
      
     <h2>All attributes</h2>
     <input type="file" accept="image/*;capture=camera" capture="environment">
+
+    <h2>Supports input capture?</h2>
+    <p id="supportsCapture" />
+
+    <script>
+      var inputFile = document.createElement("input");
+      document.getElementById("supportsCapture").innerHTML = inputFile.capture !== undefined ? "✅" : "🟥";
+    </script>
   </body>
 </html>
